@@ -23,9 +23,7 @@ $(() => {
     ////Form////
 
     $("body").on("click", "#seatforminfo img:first, #seatforminfo button:first", (e) => {
-        $("#button").click(function() {
-            $("#seatform").fadeOut("slow")
-        });
+
         $("img").click(function() {
             $("#seatform").fadeOut("slow")
         });
@@ -39,6 +37,8 @@ $(() => {
             // console.dir(currentTable.data("guest-name"));
             // console.dir(currentTable.data("guest-phone"));
             // console.dir(currentTable.data("guest-size"));
+            $('input').val('');
+            $("#seatform").fadeOut("slow");
         }
     });
 
